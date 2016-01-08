@@ -1,0 +1,59 @@
+.testing {
+  width: percentage(5/7);
+}
+
+.wrapper {
+  padding: 0;
+  background-color: black;
+  background-image: url(../images/main-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 608px;
+}
+
+.ghost-buttons {
+  float: right;
+}
+
+.container {
+  max-width: 1170px;
+  position: relative;
+  margin:0 auto;
+  padding: 20px 20px 50px 20px;
+}
+
+.wrapper .container .logo img{
+  max-width: 185px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+
+.ghost-btn {
+  color: white;
+  height: 38px;
+  line-height: 34px;
+  padding: 0 20px;
+  font-size: 0.9em;
+  border: 2px solid #ea495c;
+  border-radius: 5px;
+  display: block;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  float: left;
+  &:hover{
+    transition:0.5s ease;
+    background-color:#ea495c;
+    color:#fff;
+  }
+  &:focus{
+    outline:none;
+  }
+}
+
+.career-btn, .login-btn {
+  margin: 0 15px;
+}
