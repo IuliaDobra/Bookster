@@ -2,24 +2,23 @@
 
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
-  'ngRoute',
-  'myApp.version'
+  'ngRoute'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider
       .when('/landing', {
-        templateUrl:'../views/landing.html',
+        templateUrl:'../landing/landing.html',
         controller: 'LandingController'
       })
     .when('/login', {
-      templateUrl: '../views/login.html',
+      templateUrl: '../login/login.html',
       controller: 'LoginController'
     })
     .when('/home', {
-      templateUrl: '../views/home.html',
+      templateUrl: '../home/home.html',
       controller: 'HomeController'
     })
     .otherwise({
-      redirectTo: '/home'
+      redirectTo: '/landing'
     });
 }]);
