@@ -6,64 +6,59 @@
   background-repeat: no-repeat;
   background-position: center center;
   height: 608px; }
+  .wrapper .container {
+    max-width: 1170px;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 20px 50px 20px; }
+    .wrapper .container .logo img {
+      max-width: 185px;
+      margin-right: 30px;
+      margin-bottom: 10px;
+      float: left; }
 
 .ghost-buttons {
   float: right; }
-
-.container {
-  max-width: 1170px;
-  position: relative;
-  margin: 0 auto;
-  padding: 20px 20px 50px 20px; }
-
-.wrapper .container .logo img {
-  max-width: 185px;
-  margin-right: 30px;
-  margin-bottom: 10px;
-  float: left; }
-
-.ghost-btn {
-  color: white;
-  height: 34px;
-  line-height: 34px;
-  padding: 0 20px;
-  font-size: 0.9em;
-  border: 2px solid #ea495c;
-  border-radius: 5px;
-  display: block;
-  background-color: transparent;
-  text-decoration: none;
-  cursor: pointer;
-  float: left; }
-  .ghost-btn:hover {
-    transition: 0.5s ease;
+  .ghost-buttons .ghost-btn {
+    color: white;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 20px;
+    font-size: 0.9em;
+    border: 2px solid #ea495c;
+    border-radius: 5px;
+    display: block;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    float: left; }
+    .ghost-buttons .ghost-btn:hover {
+      transition: 0.5s ease;
+      background-color: #ea495c;
+      color: #fff; }
+    .ghost-buttons .ghost-btn:focus {
+      outline: none; }
+  .ghost-buttons .ghost-full-btn {
+    color: white;
+    height: 38px;
+    line-height: 34px;
+    padding: 0 20px;
+    font-size: 0.9em;
+    border: solid 1px #b81528;
+    border-radius: 5px;
+    display: block;
     background-color: #ea495c;
-    color: #fff; }
-  .ghost-btn:focus {
-    outline: none; }
-
-.ghost-full-btn {
-  color: white;
-  height: 38px;
-  line-height: 34px;
-  padding: 0 20px;
-  font-size: 0.9em;
-  border: solid 1px #b81528;
-  border-radius: 5px;
-  display: block;
-  background-color: #ea495c;
-  text-decoration: none;
-  cursor: pointer;
-  float: left; }
-  .ghost-full-btn:hover {
-    transition: 0.5s ease;
-    background-color: #ec5768;
-    color: #fff; }
-  .ghost-full-btn:focus {
-    outline: none; }
-
-.career-btn, .login-btn {
-  margin: 0 15px; }
+    text-decoration: none;
+    cursor: pointer;
+    float: left; }
+    .ghost-buttons .ghost-full-btn:hover {
+      transition: 0.5s ease;
+      background-color: #ec5768;
+      color: #fff; }
+    .ghost-buttons .ghost-full-btn:focus {
+      outline: none; }
+  .ghost-buttons .career-btn, .ghost-buttons .login-btn {
+    margin: 0 15px; }
 
 .welcome {
   padding: 40px;
@@ -86,3 +81,49 @@
     .welcome .button-container .ghost-full-btn {
       float: none;
       margin: 0 auto; }
+
+.wrapper-login {
+  padding: 0;
+  background-color: black;
+  background-image: url(../images/register-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 608px; }
+  .wrapper-login .container {
+    max-width: 1170px;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 20px 50px 20px; }
+    .wrapper-login .container .logo img {
+      max-width: 185px;
+      margin-right: 30px;
+      margin-bottom: 10px;
+      float: left; }
+  .wrapper-login .login_new {
+    float: right;
+    color: #c4c4c4; }
+    .wrapper-login .login_new table {
+      border-collapse: collapse;
+      border-spacing: 0; }
+      .wrapper-login .login_new table .fl {
+        padding-bottom: 6px;
+        color: #FFF; }
+      .wrapper-login .login_new table .ti {
+        width: 200px;
+        height: 25px;
+        border: 1px solid #333333;
+        border-radius: 3px;
+        padding-left: 5px; }
+        .wrapper-login .login_new table .ti input {
+          background-color: #faffbd;
+          background-image: none;
+          color: black; }
+        .wrapper-login .login_new table .ti #wp-submit {
+          background: #27af72;
+          border: 1px solid #27af72;
+          height: 26px;
+          width: 80px;
+          color: #FFF;
+          overflow: hidden;
+          cursor: pointer; }
