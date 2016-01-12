@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "name": "Plansul lui Nietzsche",
     "author": "Irvin D. Yalom",
     "year": "2007",
@@ -9,6 +10,7 @@
     "rating": "9.07"
   },
   {
+    "id": "2",
     "name": "Cronica unei morti anuntate",
     "author": "Gabriel Garcia Marquez",
     "year": "1987",
@@ -18,6 +20,7 @@
     "rating": "8.46"
   },
   {
+    "id":"3",
     "name": "Padurea norvegiana",
     "author": "Haruki Murakami",
     "year": "1987",
@@ -27,6 +30,7 @@
     "rating": "8.73"
   },
   {
+    "id": "4",
     "name": "Dragostea in vremea holerei",
     "author": "Gabriel Garcia Marquez",
     "year": "2010",
@@ -36,6 +40,7 @@
     "rating": "8.99"
   },
   {
+    "id": "5",
     "name": "Povestea uitarii",
     "author": "Stefan Merrill Block",
     "year": "2011",
