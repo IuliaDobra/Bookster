@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Plansul lui Nietzsche",
+    "author": "Irvin D. Yalom",
+    "year": "2007",
+    "pages": "400 pagini",
+    "img": "./assets/images/books/plansul-lui-nietzsche.jpg",
+    "description": "Friedrich Nietzsche, filozof care a marcat Europa moderna, un medic tanar numit Sigmund Freud, Joseph Breuer, mentorul lui Freud si unul dintre intemeietorii psihoterapiei, si fascinanta Lou Andreas-Salomé, muza capricioasa a lui Nietzsche, sunt protagonistii unui roman indraznet, impletind adevarul istoric si fictiunea in atmosfera Vienei fin de siècle.",
+    "rating": "9.07"
+  },
+  {
+    "name": "Cronica unei morti anuntate",
+    "author": "Gabriel Garcia Marquez",
+    "year": "1987",
+    "pages": "160 pagini",
+    "img": "./assets/images/books/cronica-unei-morti-anuntate.jpg",
+    "description": "Multi dintre cei care se aflau in port stiau ca Santiago Nassar urma sa fie omorat. Don Lazaro Aponte, colonel de la academia militara, acum in rezerva, si primar de unsprezece ani, ii adresa un salut cu degetele. „Aveam motivele mele bine intemeiate sa cred ca nu mai era nici o primejdie pentru el.“ imi zise. Nici parintele Carmen Amador nu se nelinisti: „Cand l-am vazut teafar, am crezut ca totul fusese o minciuna.“ imi zise. Nimeni nici macar nu se intreba daca Santiago Nassar fusese prevenit, pentru ca tuturor li se paru imposibil sa nu fie…",
+    "rating": "8.46"
+  },
+  {
+    "name": "Padurea norvegiana",
+    "author": "Haruki Murakami",
+    "year": "1987",
+    "pages": "362 pagini",
+    "img": "./assets/images/books/padurea-norvegiana.jpg",
+    "description": "Romanul Padurea norvegiana, care-si imprumuta titlul de la un hit al formatiei Beatles, Norwegian Wood, are ca fond atmosfera social-politica agitata a anilor ’60. Naratiunea opune acestui laitmotiv dur momente de o intimitate emotionala rascolitoare. Povestea lui Toru Watanabe urmareste firul implicatiilor psihologice nascute din dragostea imposibila pentru iubita prietenului mort. Totul se petrece pe fundalul unor episoade marcate la tot pasul de scene erotice in camere sordide de camin studentesc, de afise si discuri cu Jim Morrison, Miles Davis sau Bach, de lecturi din clasicii literaturii universale.",
+    "rating": "8.73"
+  },
+  {
+    "name": "Dragostea in vremea holerei",
+    "author": "Gabriel Garcia Marquez",
+    "year": "2010",
+    "pages": "448 pagini",
+    "img": "./assets/images/books/dragostea-in-vremea-holerei.jpg",
+    "description": "Dragostea in vremea holerei introduce o naratiune care seduce si in acelasi timp sensibilizeaza cititorul in legatura cu ideea unei iubiri neingradite de barierele timpului, naratiune care in acelasi timp poate fi privita ca o viziune simplista a dragostei, de catre cititorul care este neatent si intra in capcana stilului fermecator al artistului numit Marquez.",
+    "rating": "8.99"
+  },
+  {
+    "name": "Povestea uitarii",
+    "author": "Stefan Merrill Block",
+    "year": "2011",
+    "pages": "304 pagini",
+    "img": "./assets/images/books/povestea-uitarii.jpg",
+    "description": "Abel Haggard, un batran care traieste insingurat in ultima ferma ramasa in picioare in suburbiile noi si cochete ale orasului Dallas, si-a vazut fratele macinat de Alzheimer si iubirea vietii lui ucisa intr-un accident de masina. Isi asteapta fara speranta fiica, plecata de acasa cu 20 de ani in urma, cand un adevar tinut sub tacere inca de dinaintea nasterii ei a iesit la iveala.",
+    "rating": "8.24"
+  }
+]

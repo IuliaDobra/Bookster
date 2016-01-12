@@ -7,16 +7,16 @@ angular.module('myApp', [
 config(['$routeProvider', function($routeProvider) {
   $routeProvider
       .when('/landing', {
-        templateUrl:'../landing/landing.html',
+        templateUrl:'landing/landing.html',
         controller: 'LandingController'
       })
     .when('/login', {
-      templateUrl: '../login/login.html',
+      templateUrl: 'login/login.html',
       controller: 'LoginController'
     })
-    .when('/home', {
-      templateUrl: '../home/home.html',
-      controller: 'HomeController'
+    .when('/books', {
+      templateUrl: 'books/books.html',
+      controller: 'BooksController'
     })
     .otherwise({
       redirectTo: '/landing'

@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="col-lg-4" ng-if>
+        <img ng-src="{{book.img}}" class="bookLarge pull-right">
+    </div>
+    <div class="col-lg-6" style="padding-top: 100px" ng-if>
+        <h3 class="redColor paddingDetails">Book name: {{book.name}}</h3>
+        <h3 class="blueColor paddingDetails">Author: {{book.author}}</h3>
+        <h3 class="redColor paddingDetails">Pages: {{book.pages}}</h3>
+        <h3 class="blueColor paddingDetails">Year of printing: {{book.year}}</h3>
+        <h4 class="yellowColor paddingDetails">Rating: {{book.rating}}</h4>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-2" ng-repeat="book in books track by $index" ng-click="selectedBook(book)">
+            <div class="book-item">
+                <img ng-src="{{book.img}}" class="book-item">
+            </div>
+        </div>
+    </div>
+</div>
