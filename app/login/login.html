@@ -5,12 +5,12 @@
                 <img src="../assets/images/bookster-logo-white.png">
             </div>
             <div class="login_new">
-                <form name="loginform" id="loginform" action="" method="post">
+                <form name="loginform" id="loginform"ui-sref="login" method="POST" ng-submit="submit($event)">
                     <table><tbody>
                     <tr><td class="fl" colspan="2" style="font-size:16px"><label for="user_login">Ai deja un cont la Bookster?</label></td><td>&nbsp;</td></tr>
-                    <tr><td style="padding-right:10px;"><input id="user_login" class="ti" name="log" type="text" placeholder="Adresa de email"></td>
-                        <td style="padding-right:10px;"><input id="user_pass" class="ti" name="pwd" type="password" placeholder="Parola"></td>
-                        <td><input type="submit" name="wp-submit" id="wp-submit" value="Login"><input type="hidden" name="redirect_to" value="/#/landing"></td>
+                    <tr><td style="padding-right:10px;"><input id="user_login" class="ti" name="log" type="text" placeholder="Username" ng-model="credentials.username" required></td>
+                        <td style="padding-right:10px;"><input id="user_pass" class="ti" name="pwd" type="password" placeholder="Parola" ng-model="credentials.password" required></td>
+                        <td> <input type="submit" name="submit" value="Log In"><input type="hidden" name="redirect_to" value="/#/landing"></td>
                     </tr>
                     <tr><td><input style="margin-left:0;" id="rememberme" name="rememberme" type="checkbox" checked=""><label for="rememberme">Tine-ma minte</label></td><td><a href="/#/home">Ti-ai uitat parola?</a></td></tr>
                     </tbody></table>

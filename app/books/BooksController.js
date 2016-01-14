@@ -1,22 +1,26 @@
 'use strict';
 
 angular.module('myApp').controller('BooksController',
-    function BooksController($scope, booksService) {
-    $scope.vm = {};
-    function success(books){
-        //console.log(books);
-        $scope.books = books;
-    }
-    function error(response){
-        console.warn(response);
-    }
+    function BooksController($scope, apiService) {
+  //  $scope.vm = {};
     $scope.books = [];
-    booksService.getAll()
-        .then(success, error);
+    apiService.getBooks().then(
+        function(response){
+            $scope.books = response.data;
+        },
+        function(response){
+            console.warn(response);
+        }
+    );
 
-    console.log("Scope.books: ");
-    console.log($scope.books);
-    $scope.selectBook = function (book) {
-        $scope.vm.selectedBook = book;
-    };
+    $scope.showBook = function(book) {
+        apiService.getBook(book).then(
+            function (response) {
+                $scope.book = response.data;
+            },
+            function (response) {
+                console.warn(response);
+            }
+        );
+    }
 });
