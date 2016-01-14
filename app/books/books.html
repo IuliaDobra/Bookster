@@ -19,6 +19,19 @@
         </div>
     </div>
     <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" ng-if="book">
+            <h3>Reviews</h3> <br>
+            <form name="reviewform" id="reviewform" ui-sref="books" method="POST" ng-submit="sendReview()">
+                <textarea name="text" ng-model="text" placeholder="Add a review"></textarea><br>
+                <input type="submit" name="submit" id="submit" value="Add review">
+                <input type="hidden" name="book" ng-model="book" value="{{book}}">
+            </form>
+            <div ng-repeat="review in book.reviews">
+                {{review.text}}
+            </div>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-lg-1"></div>
         <div class="col-lg-2" ng-repeat="book in books | filter:search:strict" ng-click="showBook(book)">
             <div class="book-item">

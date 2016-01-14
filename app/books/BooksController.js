@@ -22,5 +22,16 @@ angular.module('myApp').controller('BooksController',
                 console.warn(response);
             }
         );
+    };
+
+    $scope.sendReview = function(){
+        apiService.createBookReview($scope.text, $scope.book.id).then(
+            function (response) {
+                $scope.book = response.data;
+            },
+            function (response) {
+                console.warn(response);
+            }
+        );
     }
 });
