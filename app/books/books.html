@@ -10,22 +10,22 @@
             <img ng-src="{{book.img}}" class="book-large pull-right">
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-if="book">
-            <h3 class="redColor paddingDetails">Book name: {{book.name}}</h3>
-            <h3 class="blueColor paddingDetails">Author: {{book.author}}</h3>
-            <h3 class="redColor paddingDetails">Pages: {{book.pages}}</h3>
-            <h3 class="blueColor paddingDetails">Year of printing: {{book.year}}</h3>
-            <h4 class="yellowColor paddingDetails">Rating: {{book.rating}}</h4>
-            <h4 class="yellowColor paddingDetails">Description: {{book.description}}</h4>
+            <h3>Book name: {{book.name}}</h3>
+            <h3>Author: {{book.author}}</h3>
+            <h3>Pages: {{book.pages}}</h3>
+            <h3>Year of printing: {{book.year}}</h3>
+            <h4>Rating: {{book.rating}}</h4>
+            <h4>Description: {{book.description}}</h4>
         </div>
     </div>
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" ng-if="book">
             <h3>Reviews</h3> <br>
-            <form name="reviewform" id="reviewform" ui-sref="books" method="POST" ng-submit="sendReview()">
-                <textarea name="text" ng-model="text" placeholder="Add a review"></textarea><br>
+            <form name="reviewform" id="reviewform" ui-sref="books" method="POST" ng-submit="sendReview($event)">
+                <textarea name="text" ng-model="vm.text" placeholder="Add a review"></textarea><br>
                 <input type="submit" name="submit" id="submit" value="Add review">
-                <input type="hidden" name="book" ng-model="book" value="{{book}}">
             </form>
+            {{text}}
             <div ng-repeat="review in book.reviews">
                 {{review.text}}
             </div>
@@ -33,7 +33,7 @@
     </div>
     <div class="row">
         <div class="col-lg-1"></div>
-        <div class="col-lg-2" ng-repeat="book in books | filter:search:strict" ng-click="showBook(book)">
+        <div class="col-lg-2" ng-repeat="book in books |  filterBy:search:['name', 'author']" ng-click="showBook(book)">
             <div class="book-item">
                 <img ng-src="{{book.img}}" class="book-item">
             </div>
